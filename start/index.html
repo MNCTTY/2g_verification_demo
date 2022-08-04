@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>2G NFT verification</title>
+  <link rel="icon" type="image/png" href="metamask-fox.svg"> <!--change the link to our logo--> 
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="metamask.css" type="text/css">
+</head>
+
+<body>
+    <main class="container-fluid">
+        <header>
+            <h1 class="text-center">2G NFT verification</h1>
+        </header>
+
+        <section>
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Connect to your wallet</h4>
+                            <button class="btn btn-primary btn-lg btn-block mb-3" id="connectButton">Connect to Wallet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Check your info</h4>
+                            <button class="btn btn-primary btn-lg btn-block mb-3" id="getAccounts">eth_accounts</button>
+                            <p class="info-text alert alert-secondary">eth_accounts result: <span id="getAccountsResult"></span></p>
+                        </div>
+                        <div class="card-body" id="img_place">
+                            <button class="btn btn-primary btn-lg btn-block mb-3" id="art_pic">Get your arts</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Part 1 -->
+        <section>
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Share your art</h4>
+                            <button class="btn btn-primary btn-lg btn-block mb-3" id="publish2inst">Publish to Instagram</button>
+                        </div>
+                        <div class="card-body" id="text_place">
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+
+    <section>
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Disconnect your wallet</h4>
+                        <button class="btn btn-primary btn-lg btn-block mb-3" id="connectButton">Disconnect Wallet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        -->
+    </main>
+
+  <script src="node_modules/@metamask/onboarding/dist/metamask-onboarding.bundle.js" defer></script>
+  <script src="contract.js" defer></script>
+</body>
+
+</html>
